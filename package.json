@@ -16,7 +16,13 @@
     "test": "xo && ava --verbose",
     "build": "webpack",
     "build:example": "./build-all.sh",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "bump:patch": "npm version patch -m \"v%s\"",
+    "bump:minor": "npm version minor -m \"v%s\"",
+    "bump": "npm run bump:patch",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags",
+    "prepublish": "npm run test && npm run build"
   },
   "ava": {
     "require": [
