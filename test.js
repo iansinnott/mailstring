@@ -35,6 +35,16 @@ test('mailTo returns a valid mailto string', t => {
   t.is(mailTo('name@email.com,other@example.com'), 'mailto:name@email.com,other@example.com');
 });
 
+test('address can be empty', t => {
+  t.is(mailTo(''), 'mailto:');
+  t.is(mailTo('', {
+    cc: 'other@email.com',
+    bcc: 'fun@email.com',
+    subject: 'hello',
+    body: 'something',
+  }), 'mailto:?cc=other@email.com&bcc=fun@email.com&subject=hello&body=something');
+});
+
 test('mailTo does not add query params if not passed any', t => {
   const href = mailTo('name@example.com', {});
   t.false(href.includes('?'));
@@ -62,7 +72,7 @@ test('mailTo does not include params with falsy values', t => {
   }), 'mailto:name@email.com?cc=other@email.com');
 });
 
-test('encodesURI components', t => {
+test('mailTo run sencodeURIcomponents on values but not cc or bcc', t => {
   const href = mailTo('ian@example.com', {
     cc:'first@example.com,second@example.com',
     bcc:'third@example.com',

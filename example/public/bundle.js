@@ -54,7 +54,7 @@
 
 	var _reactDom = __webpack_require__(34);
 
-	var _component = __webpack_require__(173);
+	var _component = __webpack_require__(172);
 
 	var _component2 = _interopRequireDefault(_component);
 
@@ -21480,8 +21480,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 172 */,
-/* 173 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	(function webpackUniversalModuleDefinition(root, factory) {
