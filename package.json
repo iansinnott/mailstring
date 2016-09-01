@@ -20,9 +20,9 @@
     "bump:patch": "npm version patch -m \"v%s\"",
     "bump:minor": "npm version minor -m \"v%s\"",
     "bump": "npm run bump:patch",
-    "preversion": "npm test",
+    "preversion": "ava --verbose",
     "postversion": "git push && git push --tags",
-    "prepublish": "npm run test && npm run build"
+    "prepublish": "ava --verbose && npm run build"
   },
   "ava": {
     "require": [
