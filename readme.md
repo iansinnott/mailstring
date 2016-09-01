@@ -123,6 +123,7 @@ class App extends React.Component {
 
 ## TODO
 
+- [ ] Do not package React with the `mailstring/react` component
 - [ ] Test MailToLink using enzyme
 - [ ] Document MailToLink
 
