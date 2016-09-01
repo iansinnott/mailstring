@@ -15,9 +15,9 @@ test('buildQueryString', t => {
 });
 
 test('mailTo returns a string', t => {
-	t.is(typeof mailTo(), 'string');
-	t.is(typeof mailTo('mail@example.com'), 'string');
-	t.is(typeof mailTo('mail@example.com,funtimes'), 'string');
+  t.is(typeof mailTo(), 'string');
+  t.is(typeof mailTo('mail@example.com'), 'string');
+  t.is(typeof mailTo('mail@example.com,funtimes'), 'string');
 });
 
 test('mailTo returns a valid mailto string', t => {
@@ -27,7 +27,7 @@ test('mailTo returns a valid mailto string', t => {
 
 test('mailTo does not add query params if not passed any', t => {
   const result = mailTo('name@example.com', {});
-  t.false(result.includes('?'))
-  t.false(result.includes('&'))
+  t.false(result.includes('?'));
+  t.false(result.includes('&'));
 });
 

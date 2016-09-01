@@ -11,8 +11,6 @@ export const buildQueryString = object => {
 };
 
 export const mailTo = (address = '', options = {}) => {
-  console.log(address);
-  return 'mailto:' + address + isEmpty(options)
-    ? ''
-    : buildQueryString(options);
+  const queryString = isEmpty(options) ? '' : buildQueryString(options);
+  return 'mailto:' + address + queryString;
 };

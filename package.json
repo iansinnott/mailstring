@@ -41,6 +41,13 @@
     "xo": "^0.16.0"
   },
   "xo": {
-    "esnext": true
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "xo/filename-case": 0,
+      "babel/object-curly-spacing": 0,
+      "babel/array-bracket-spacing": 0,
+      "comma-dangle": [1, "always-multiline"]
+    }
   }
 }
