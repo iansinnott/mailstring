@@ -1,6 +1,6 @@
 {
   "name": "mailstring",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Generate mailto strings for fun and profit",
   "license": "MIT",
   "repository": "iansinnott/mailstring",
@@ -13,17 +13,31 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava --verbose",
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
   },
   "files": [
-    "index.js"
+    "src/mailTo.js"
   ],
   "keywords": [
-    ""
+    "mailto",
+    "email",
+    "react"
   ],
   "dependencies": {},
   "devDependencies": {
     "ava": "^0.15.2",
+    "babel-core": "~6.14.0",
+    "babel-loader": "~6.2.5",
+    "babel-preset-es2015": "~6.14.0",
+    "babel-register": "~6.14.0",
+    "webpack": "~1.13.2",
     "xo": "^0.16.0"
   },
   "xo": {
