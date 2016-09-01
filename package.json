@@ -1,0 +1,32 @@
+{
+  "name": "mailstring",
+  "version": "0.0.0",
+  "description": "Generate mailto strings for fun and profit",
+  "license": "MIT",
+  "repository": "iansinnott/mailstring",
+  "author": {
+    "name": "Ian Sinnott",
+    "email": "ian@iansinnott.com",
+    "url": "iansinnott.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
