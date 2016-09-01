@@ -1,16 +1,12 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    index: './src/index.js',
-    component: './src/component.js',
-  },
+  entry: './src/index.js',
   output: {
-    path: './dist',
-    filename: '[name].js',
-    libraryTarget: 'umd',
+    path: './public',
+    filename: 'bundle.js',
   },
-
   module: {
     loaders: [
       {
@@ -20,4 +16,7 @@ module.exports = {
       },
     ],
   },
+  plugins: [new HtmlWebpackPlugin({
+    template: './src/index.html',
+  })],
 };

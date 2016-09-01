@@ -15,6 +15,7 @@
   "scripts": {
     "test": "xo && ava --verbose",
     "build": "webpack",
+    "build:example": "./build-all.sh",
     "watch": "webpack -w"
   },
   "ava": {
@@ -36,7 +37,10 @@
     "babel-core": "~6.14.0",
     "babel-loader": "~6.2.5",
     "babel-preset-es2015": "~6.14.0",
+    "babel-preset-react": "~6.11.1",
+    "babel-preset-stage-1": "~6.13.0",
     "babel-register": "~6.14.0",
+    "react": "~15.3.1",
     "webpack": "~1.13.2",
     "xo": "^0.16.0"
   },
@@ -47,7 +51,10 @@
       "xo/filename-case": 0,
       "babel/object-curly-spacing": 0,
       "babel/array-bracket-spacing": 0,
-      "comma-dangle": [1, "always-multiline"]
+      "comma-dangle": [
+        1,
+        "always-multiline"
+      ]
     }
   }
 }
