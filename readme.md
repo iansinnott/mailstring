@@ -1,7 +1,9 @@
-# mailstring [![Build Status](https://travis-ci.org/iansinnott/mailstring.svg?branch=master)](https://travis-ci.org/iansinnott/mailstring)
+# Mailstring
+
+[![Build Status](https://img.shields.io/circleci/project/iansinnott/mailstring.svg)](https://circleci.com/gh/iansinnott/mailstring)
+[![react-string-replace.js on NPM](https://img.shields.io/npm/v/mailstring.svg)](https://www.npmjs.com/package/mailstring)
 
 > Generate `mailto:` strings for fun and profit
-
 
 ## Install
 
