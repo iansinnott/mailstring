@@ -7,7 +7,7 @@
   "author": {
     "name": "Ian Sinnott",
     "email": "ian@iansinnott.com",
-    "url": "iansinnott.com"
+    "url": "https://www.iansinnott.com"
   },
   "engines": {
     "node": ">=4"

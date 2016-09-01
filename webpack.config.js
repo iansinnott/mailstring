@@ -3,14 +3,13 @@ const path = require('path');
 module.exports = {
   entry: {
     index: './src/index.js',
-    component: './src/component.js',
+    react: './src/react.js',
   },
   output: {
     path: './dist',
     filename: '[name].js',
     libraryTarget: 'umd',
   },
-
   module: {
     loaders: [
       {

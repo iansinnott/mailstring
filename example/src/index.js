@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import MailToLink from '../../dist/component.js';
+import { MailToLink } from '../../dist/react';
 
 const body = `
 Dear so and so,
