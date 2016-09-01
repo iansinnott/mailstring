@@ -13,16 +13,17 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava --verbose",
+    "lint": "xo",
+    "test": "ava --verbose",
     "build": "webpack",
     "build:example": "./build-all.sh",
     "watch": "webpack -w",
     "bump:patch": "npm version patch -m \"v%s\"",
     "bump:minor": "npm version minor -m \"v%s\"",
     "bump": "npm run bump:patch",
-    "preversion": "ava --verbose",
+    "preversion": "npm run test",
     "postversion": "git push && git push --tags",
-    "prepublish": "ava --verbose && npm run build"
+    "prepublish": "npm run test && npm run build"
   },
   "ava": {
     "require": [
