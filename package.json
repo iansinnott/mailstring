@@ -1,6 +1,6 @@
 {
   "name": "mailstring",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Generate mailto strings for fun and profit",
   "license": "MIT",
   "repository": "iansinnott/mailstring",
